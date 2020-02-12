@@ -1,7 +1,7 @@
 export class StrainService {
-  async getStrainbyFlavor() {
+  async getStrainbyFlavor(flavor) {
     try {
-      let response = await fetch(`strainapi.evanbusse.com/${process.env.FLAVOR_KEY}/strains/search/flavor/FLAVOR`);
+      let response = await fetch(`http://strainapi.evanbusse.com/${process.env.FLAVOR_KEY}/strains/search/flavor/${flavor}`);
       let jsonifiedResponse = await response.json();
       return jsonifiedResponse;
     } catch(error) {
