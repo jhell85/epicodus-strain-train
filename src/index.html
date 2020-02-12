@@ -8,35 +8,48 @@
 </head>
 <body class="container">
   <h1>Hop on the Mary Jane Strain Train</h1>
-  <div class="box">
-    <p>Find a strain by flavor</p>
-    <form id="flavorlist">
-      <select id="selectflavor">
-        <option>Earthy</option>
-        <option>Chemical</option>
-        <option>Pine</option>
-        <option>Spicy/Herbal</option>
-        <option>Pungent</option>
-        <option>Pepper</option>
-        <option>Flowery</option>
-        <option>Citrus</option>
-        <option>Orange</option>
-        <option>Sweet</option>
-        <option>Grape</option>
-        <option>Minty</option>
-        <option>Woody</option>
-        <option>Skunk</option>
-        <option>Tropical</option>
-        <option>Grapefruit</option>
-        <option>Diesel</option>
-        <option>Nutty</option>
-        <option>Lemon</option>
-        <option>Berry</option>
-      </select>
-      <button type="submit">Submit</button>
-    </form>
-  </div>
-
+  <div class="box"> 
+    <div class="row">
+      <div class="col-md-6">
+        <form>
+        <p>Choose strain type</p>
+        <select id="selectrace">
+          <option value="sativa">Sativa</option>
+          <option value="sativa">Indica</option>
+          <option value="hybrid">Hybrid</option>
+        </select>
+      </form>
+      </div>
+      <div class="col-md-6">
+        <form>
+        <p>Find a strain by flavor</p>
+          <select id="selectflavor">
+            <option>Earthy</option>
+            <option>Chemical</option>
+            <option>Pine</option>
+            <option>Spicy/Herbal</option>
+            <option>Pungent</option>
+            <option>Pepper</option>
+            <option>Flowery</option>
+            <option>Citrus</option>
+            <option>Orange</option>
+            <option>Sweet</option>
+            <option>Grape</option>
+            <option>Minty</option>
+            <option>Woody</option>
+            <option>Skunk</option>
+            <option>Tropical</option>
+            <option>Grapefruit</option>
+            <option>Diesel</option>
+            <option>Nutty</option>
+            <option>Lemon</option>
+            <option>Berry</option>
+          </select>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div> 
   <div class="box" id="output"></div>
 </body>
 </html>
