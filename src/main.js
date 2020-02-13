@@ -12,6 +12,12 @@ function showStrains(array, race, flavor) {
   }
 }
 
+function showFinal(object) {
+  console.log(object.name);
+  $("#output").text(object.name + " ~ ");
+  $("#output").append(object.desc);
+
+}
 
 $(document).ready(function() {
   $("form").submit(function() {
@@ -35,7 +41,8 @@ $(document).ready(function() {
       if(responseFinal.length === 0) {
         $("#output").text("This is not the weed you're looking for.");
       } else 
-      console.log(responseFinal); 
+      console.log(responseFinal[0]);
+      showFinal(responseFinal[0]); 
     })();
   });
 });
