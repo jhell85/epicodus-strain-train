@@ -6,13 +6,13 @@ import { StrainService } from './strain-service';
 
 let selectedArray = [];
 function showStrains(array, race, flavor) {
-  console.log(array);
+  // console.log(array);
   for (let i=0; i<array.length; i++) {
     if (array[i].race == race && array[i].flavor == flavor) {
       selectedArray.push(" " + array[i].name);
     } 
   }
-  console.log(selectedArray);
+  // console.log(selectedArray);
   
   $("#output").text(selectedArray);
 }
